@@ -13,3 +13,10 @@ Exploration / cargo frigate, anime style with Starsector-like top-down silhouett
 
 ## Layout
 Arrowhead bow with twin sensor prongs and a sensor dome underneath, a stepped bridge tower with a mast, a sensor dish, a dorsal container rack, two side cargo pods with hatches, three main engines and two pod engines, canted fins, and nav lights.
+
+## Unity (URP)
+- `Assets/Shaders/Toon/AnimeToon.shader` is the Unity version of the Blender toon look. It has three bands with a cool shadow tint, a rim light, a hard specular spot and emission, and it casts and receives URP shadows. It also lights additional lights in Forward and Forward+.
+- `Assets/Shaders/Toon/ToonOutline.shader` draws the baked outline shells in a flat colour and has no shadow pass. `Extra Width` makes the lines thicker.
+- `Assets/Editor/ToonMaterialPostprocessor.cs`: any FBX under `Assets/Models/` gets these shaders automatically on import, with the Blender colours, emission and per-material shadow tints. Keep the FBX importer's Material Creation Mode on "Import via MaterialDescription", which is the default.
+- The engine glow needs Bloom in the URP Volume to look like it does in the renders.
+- The shaders need URP. The Built-in render pipeline is not supported.
