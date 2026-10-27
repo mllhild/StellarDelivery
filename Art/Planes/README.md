@@ -18,3 +18,5 @@ Colour schemes:
 | `Plane_MissileBoat` (M-41) | Missile boat | 2 | 14.0 × 7.6 × 5.8 m | ~4.7k | Asymmetric: a launcher block with 12 forward tubes and 15 vertical cells, a two-seat cockpit sponson on the right, and a sensor housing with a dish and a long sensor boom on the left. Two anti-ship missiles hang below, and radiators sit over the three engines |
 
 Renders: `render_lineup.png` shows all six (fighters in front, bombers behind), `render_scale.png` compares them with a frigate, and `render_<name>_{hero,side,rear,top}.png` shows each one.
+
+The first, more aircraft-like set is kept in `Planes_first_attempt/`, here and in `Assets/Models/Planes/Planes_first_attempt/`.
